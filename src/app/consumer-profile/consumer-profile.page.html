@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="back()" ><ion-icon name="arrow-back"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Consumer Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-button shape="round" (click)="openReadModal()">
+      <ion-icon name="book"></ion-icon>
+      <ion-label class="ion-padding-start">Read Meter</ion-label>
+    </ion-button>
+  </ion-fab> -->
+  <ion-list>
+    <div class="ion-padding">
+      <ion-button color="danger" expand="full">Send SMS</ion-button>
+    </div>
+    <ion-item>
+      <label>Name: <strong>{{'John Doe'}}</strong></label>
+    </ion-item>
+    <ion-item>
+      <label>Meter Number: <strong>{{'123456789'}}</strong></label>
+    </ion-item>
+    <ion-item>
+      <label>Address: <strong>{{'Bailen, Cavite'}}</strong></label>
+    </ion-item>
+    <ion-item>
+      <label>Mobile Number: <strong>{{'0912345678'}}</strong></label>
+    </ion-item>
+    <ion-item>
+      <label [ngClass]="status == 'paid' ? 'paid' : 'unpaid'">Status: <strong>{{'Unpaid'}}</strong></label>
+    </ion-item>
+    <ion-item>
+      <label [ngClass]="status == 'paid' ? 'paid' : 'unpaid'">Due Date: <strong>{{'June 30, 2021'}}</strong></label>
+    </ion-item>
+    <ion-item>
+      <label>Last Reading: <strong>{{'12345678'}}</strong></label>
+    </ion-item>
+    <ion-item>
+      <label>Date of Last Reading: <strong>{{'June 3, 2021'}}</strong></label>
+    </ion-item>
+    <div class="ion-padding">
+      <label>Last Reading Image:</label>
+    </div>
+    <div class="center">
+      <img src="{{user ? user : '../assets/icon/empty-image.jpg'}}" alt="empty_image" class="img"> 
+    </div>
+  </ion-list>
+</ion-content>

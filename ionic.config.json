@@ -1,0 +1,7 @@
+{
+  "name": "water-district-mobile",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

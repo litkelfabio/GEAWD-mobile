@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Account</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-row class="ion-padding-horizontal ion-padding-top"> 
+    <ion-col size="12" class="ion-padding-horizontal ion-padding-top">
+      <ion-list>
+        <ion-item>
+          <ion-label>Name: <strong>Juan Reader</strong></ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Assigned Zone: <strong>1</strong></ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-padding-horizontal">
+    <ion-col size="12" class="ion-text-center ion-padding">
+      <ion-button (click)="logout()" expand="full" shape="round">LOG OUT</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

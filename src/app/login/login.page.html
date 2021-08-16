@@ -1,0 +1,37 @@
+<div class="center">
+  <ion-row >
+    <ion-col size="12">
+      <div class="ion-text-center">
+        <img src="../assets/icon/logo.png" alt="logo">
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-card class="ion-padding-top">
+    <ion-title class="ion-text-center"><strong>LOGIN</strong></ion-title>
+    <ion-list class="ion-padding-horizontal ion-padding-bottom">
+      <ion-item>
+        <ion-label position="floating">Username</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item class="relative">
+        <ion-label position="floating">Password</ion-label>
+        <ion-input [type]="type"></ion-input>
+        <ion-button fill="clear" class="absolute show-hide-btn" (click)="showHidePassword()">
+          <ion-icon [name]="icon" slot="icon-only" color="dark"></ion-icon>
+        </ion-button>
+      </ion-item>
+      <div class="ion-padding-top">
+        <ion-button expand="block" shape="round" (click)="login()">LOG IN</ion-button>
+      </div>
+      <div class="ion-padding-top">
+        <ion-button expand="block" shape="round">Credits</ion-button>
+      </div>
+    </ion-list>
+  </ion-card>
+</div>
+<!-- 
+Name: BIG
+Account Number: small
+Address: small
+
+ -->

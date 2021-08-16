@@ -1,0 +1,17 @@
+<div class="center">
+  <div class="ion-padding-vertical">
+    <ion-label>Enter the Current Reading:</ion-label>
+  </div>
+  <div class="bordered">
+    <ion-input type="number"></ion-input>
+  </div>
+  
+  <div class="relative ion-padding">
+    <img src="{{user ? user : '../assets/icon/empty-image.jpg'}}" alt="empty_image" class="img"> 
+    <ion-button class="custom-round"><ion-icon name="add" slot="icon-only"></ion-icon></ion-button>
+  </div>
+
+  <div class="ion-padding-vertical ">
+    <ion-button shape="round" (click)="confirmSubmit()">Submit</ion-button>
+  </div>
+</div>
